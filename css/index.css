@@ -1,4 +1,8 @@
-/* GLOUBLE */
+/* / About / */
+
+.block{
+  padding: 20px;
+}
 .card{
   background: url("../res/pink.jpg")
 }
@@ -8,6 +12,9 @@
   width: 150px;
   color: white;
 }
+.title{
+  text-align: center;
+}
 h2{
   font-size: 38px;
 }
@@ -15,6 +22,12 @@ h3{
   font-size: 20px;
 }
 / header /
+.header .nav{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-items: end;
+  grid-gap: 150px;
+}
 h1{
   border: 2px solid black;
   width: 100px;
@@ -28,13 +41,16 @@ h1{
 }
 .header h1{
   font-size: 24px;
-  display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 35px 18px;
 }
 .nav img{
-  width: 100px;
-  height:100px;
+  width: 300px;
+  height:300px;
+}
+.nav p{
+  font-size: 50px;
+}
+.shopno p{
+  font size:50px;
 }
 .header h2{
   font-size: 45px;
@@ -48,7 +64,7 @@ width: 232px;
 width: 69px;
 height: 84px;
 }
-/* about */
+/* / About / */
 .about{
    background: rgba(0, 0, 50, 0.05);
    font-size: 38px;
@@ -59,24 +75,32 @@ height: 84px;
 }
 
 .about img{
-  width: 390px;
-  height: 483;
+  width: 1500px;
+  height: 1500;
 }
- /* WORKS */
+.about .dignity{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 150px;
+}
+/* / Works / */
 .works p{
   font-size: 17px;
 }
 .works img{
-  width: 360;
-  height: 355;
+  width: 500;
+  height: 500;
 }
-/* Services */
-.services text{
+.imgList{
   display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-gap: 35px 18px;
-justify-items: center;
-align-items: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 18px 15px;
+}
+/* / Services / */
+.services .cardList{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px 15px;
 }
 .services h3{
   font-size: 20px;
@@ -84,22 +108,31 @@ align-items: end;
 .services p{
   font-size: 16px;
 }
-/* Team  */
-.team p{
+/* /small Team / */
+.smallteam p{
   font-size: 17px;
 }
-.team img{
-  width: 369px;
-  height: 441px;
-  text-align: center
+.smallteam .personList{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 14px 16px;
 }
-.team link{
-  width: 103px;
-  height: 23px;
-}
-/* Say */
+.smallteam img{
+  width: 362px;
+  height: 437px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
+/ Say /
+
 .say p{
   font-size: 17px;
+}
+.say .personInfo{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 150px;
 }
 .say img{
   width: 315px;
@@ -117,11 +150,8 @@ align-items: end;
 }
 .say text{
   font-size: 15px;
-  background: #445162;
-  color:white;
-text-align: center;
 }
 .say img{
-  width: 1000px;
+  width: 452px;
   height: 255px;
 }
